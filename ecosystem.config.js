@@ -24,7 +24,7 @@ module.exports = {
       ref  : "origin/master",
       repo : "https://github.com/nathanreyes/photo-studio.git",
       path : "~/photo-studio",
-      "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "nvm install && npm install && pm2 startOrRestart ecosystem.json --env production"
     },
   }
 }

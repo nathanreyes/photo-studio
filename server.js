@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to our database ==================
-mongoose.connect(process.env.DB_URI);
+mongoose.connect('mongodb://nreyes:nater638@ds149207.mlab.com:49207/photo-studio'); // (process.env.DB_URI);
 
 // Set the routes ==================
 app.use(require('./app/routes'));
